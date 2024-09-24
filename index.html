@@ -14,40 +14,71 @@
 <body id="body-container">
  <main>
         <!-- nave section start  -->
-   <section class="navbar bg-base-100">
-     <div class="navbar-start">
-      <a class="btn btn">Blog</a>
-     </div>
+     <section class="navbar bg-base-100">
+       <div class="navbar-start">
+        <a class="btn btn">Blog</a>
+       </div>
 
-      <div>
-         <a class="btn btn-ghost text-xl">
-            <span>
-                <img src="assets/logo.png" alt="">
-            </span>Donate Bangladesh</a>
-      </div>
+       <div>
+            <img style="width: 20px;" src="assets/logo.png" alt="">
+            <div></div>
+           <a class="btn btn-ghost ">
+            Donate Bangladesh</a>
+       </div>
     
-      <div class="navbar-end">
-       <a class="btn">Button</a>
-      </div>
+       <div class="navbar-end">
+          <img src="assets/coin.png" alt="">
+          <a  id="show-btn-cash-out" class="font-bold text-xl">5300<i class=" fa-solid text-white bg-black rounded-3xl fa-arrow-right text-xl -rotate-45"></i></a>
+       </div>
     </section>
     <!-- nave section end -->
       <br><br>
      <!-- user anpther button start  -->
 
      <div style="text-align: center;" >
-      <button id="button-show-add-money" class="btn btn-lg">Donation</button>
+      <button id="button-show-add-money"class="btn btn-lg">Donation</button>
       <button id="show-btn-cash-out" class="btn btn-lg">History</button>
     </div>
     <div class="divider"></div>
-      <!-- user another btutton end  -->
-      
-   
 
+
+      <!-- user another button end  -->
+
+      <!-- hero aria start -->
+
+      <div class="hero bg-base-200 min-h-screen">
+         <div class="hero-content flex-col lg:flex-row">
+           <img
+             src="assets/noakhali.png"
+             class="max-w-sm rounded-lg shadow-2xl" />
+           <div>
+         
+            <div class=" navbar-start">
+               <img src="assets/coin.png" alt="">
+               <div id="account-balance" class="stat-value">1020</div>
+             </div>
+             <h1 class="text-2xl font-bold">donate for flood at nohakli,Bangladesh</h1>
+             <p class="py-6">
+               The recent quota movement has resulted in numerous injuries and significant hardship for many individuals. your support is crucial in providing medical assistance,rehabilitation, and necessary supply to those affected. By contributing, you help ensure that injured individuals receibe the care and support they need during this challemging time. Every danation plays a vital role in alleviatiing the sufferint and aiding in their recovery. please consider making a donation to support these brave individuals in their time of need.
+             </p>
+               <input id="input-add-money" style="width:600px ;" type="text" placeholder="Write donation Amount">
+                <br>
+                <div class="form-control mt-6">
+                  <button id="btn-add-money" class="btn btn-primary">Add money</button>
+                </div>
+             
+           </div>
+         </div>
+       </div>
+       <!-- hero aria end  -->
+   
+      <div class="divider"></div>
   </main>
  <script src="js/home.js"></script>
  <script src="js/cashut.js"></script>
  <script src="js/fiture.js"></script>
 </body>
 </html>
+
 
 
