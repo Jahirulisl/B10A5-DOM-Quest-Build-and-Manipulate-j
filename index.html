@@ -9,14 +9,19 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
      <!-- daisy khala link add end-->
+      <style>
+        #nav-container{
+          position: sticky;
+        }
+      </style>
      
 </head>
 <body id="body-container">
  <main>
         <!-- nave section start  -->
-     <section class="navbar bg-base-100">
-       <div class="navbar-start">
-        <a class="btn btn">Blog</a>
+     <section class="navbar bg-yellow-50" >
+       <div class=" navbar-start">
+        <a class="font-bold">Blog</a>
        </div>
 
        <div>
@@ -26,19 +31,24 @@
             Donate Bangladesh</a>
        </div>
     
-       <div class="navbar-end">
-          <img src="assets/coin.png" alt="">
-          <a  id="show-btn-cash-out" class="font-bold text-xl">5300<i class=" fa-solid text-white bg-black rounded-3xl fa-arrow-right text-xl -rotate-45"></i></a>
-       </div>
-    </section>
+        <div class="navbar-end">
+           <img src="assets/coin.png" alt="">
+           <a  id="show-btn-cash-out" class="font-bold text-xl">5300 BDT<i class=" fa-solid text-white bg-black rounded-3xl fa-arrow-right text-xl -rotate-45"></i></a>
+        </div>
+     </section>
+    
     <!-- nave section end -->
-      <br><br>
+      
      <!-- user anpther button start  -->
 
-     <div style="text-align: center;" >
-      <button id="button-show-add-money"class="btn btn-lg">Donation</button>
-      <button id="show-btn-cash-out" class="btn btn-lg">History</button>
+     <div  id="nav-container" style="text-align: center;" >
+       <button id="button-show-add-money"class="btn btn-lg">Donation</button>
+
+       <!-- transaction history btn start -->
+       <button id="show-transaction-history" class="btn btn-lg">History</button>
     </div>
+    <!-- transaction history btn  end-->
+
     <div class="divider"></div>
 
 
@@ -46,7 +56,7 @@
 
       <!-- hero aria start -->
 
-      <div class="hero bg-base-200 min-h-screen">
+      <div id="hero-forme" class=" hero bg-base-200 min-h-screen">
          <div class="hero-content flex-col lg:flex-row">
            <img
              src="assets/noakhali.png"
@@ -55,7 +65,7 @@
          
             <div class=" navbar-start">
                <img src="assets/coin.png" alt="">
-               <div id="account-balance" class="stat-value">1020</div>
+               <div id="account-balance" class="stat- font-bold">1020 BDT</div>
              </div>
              <h1 class="text-2xl font-bold">donate for flood at nohakli,Bangladesh</h1>
              <p class="py-6">
@@ -66,17 +76,28 @@
                 <div class="form-control mt-6">
                   <button id="btn-add-money" class="btn btn-primary">Add money</button>
                 </div>
-             
+                <!-- transaction section  -->
+                
            </div>
-         </div>
-       </div>
-       <!-- hero aria end  -->
-   
-      <div class="divider"></div>
+        </div>
+      
+       <div class="divider"></div>
   </main>
+
+  <div id="Transaction-section" class="text-center font-bold  py-10 " >
+    <h2 class="">
+    
+    </h2>
+    <!-- <div id="Transaction-container">
+
+    </div> -->
+  </div>
+
+</div>
  <script src="js/home.js"></script>
  <script src="js/cashut.js"></script>
  <script src="js/fiture.js"></script>
+ <script src="js/utilitis.js"></script>
 </body>
 </html>
 
