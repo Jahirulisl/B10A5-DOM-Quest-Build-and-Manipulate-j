@@ -6,5 +6,6 @@ document.getElementById('button-show-add-money').addEventListener('click',functi
     showSectionById('hero-forme');
 });
 document.getElementById('blog-container').addEventListener('click',function(){
-    showSectionById('faq-container');
+    showSectionById(`window.location.hrf = '/faq.html'`)
 })
+

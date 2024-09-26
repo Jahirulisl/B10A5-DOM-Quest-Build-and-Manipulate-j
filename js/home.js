@@ -31,27 +31,6 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
    <div> </div>
     `
    document.getElementById('Transaction-section').appendChild(div);
-
-
-
-
-
-
-
-
-
-   //add to transaction history start..
-  //  const p = document.createElement('p');
-  //  p.innerText = `Added: ${addMoneyNumber} Tk.New Balance: ${timeBalance}`;
-  // //  console.log(p);
-  //  //add to transaction history end..
-
-  //  //should be a common function
-  //  document.getElementById('Transaction-container').appendChild(p);
-
-
-
-
     alert('you have a donated for humankind sucessfully')
   }
   else{
